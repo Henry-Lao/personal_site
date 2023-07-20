@@ -10,24 +10,24 @@
 }
 
 .parallax-sky {
-  background-image: url(./assets/images/background.png);
+  background-image: url(https://henry-lao.s3.us-west-1.amazonaws.com/images/background.png);
 }
 
 .parallax-mountains {
-  background-image: url(./assets/images/mountains.png)
+  background-image: url(https://henry-lao.s3.us-west-1.amazonaws.com/images/mountains.png)
 }
 
 .parallax-city {
-  background-image: url(./assets/images/city.png)
+  background-image: url(https://henry-lao.s3.us-west-1.amazonaws.com/images/city.png)
 }
 
 .parallax-person {
-  background-image: url(./assets/images/foreground.png);
+  background-image: url(https://henry-lao.s3.us-west-1.amazonaws.com/images/foreground.png);
 }
 
 .title {
   position: absolute;
-  top: 25%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

@@ -1,7 +1,12 @@
 import React from 'react'
 import { AppBar, Button, Toolbar, styled, Box } from "@mui/material"
 
-function Navbar() {
+export interface Props {
+    scrollTo: (index: number) => any
+}
+
+
+function Navbar(props: Props) {
     const NavBarButton = styled(Button)({
         color: 'white',
         opacity: '90%',
@@ -16,10 +21,9 @@ function Navbar() {
             <Toolbar>
                 <Box sx={{flexGrow: 1}}/>
                 <Box sx={{ px: 5 }}>
-                    <NavBarButton variant="text">HOME</NavBarButton>
-                    <NavBarButton variant="text">WORK</NavBarButton>
-                    <NavBarButton variant="text">ABOUT</NavBarButton>
-                    <NavBarButton variant="text">CONTACT</NavBarButton>
+                    <NavBarButton variant="text" onClick={()=>props.scrollTo(0)}>HOME</NavBarButton>
+                    <NavBarButton variant="text" onClick={()=>props.scrollTo(.59)}>ABOUT</NavBarButton>
+                    <NavBarButton variant="text" onClick={()=>props.scrollTo(1.19)}>WORK</NavBarButton>
                 </Box>
             </Toolbar>
         </AppBar>
